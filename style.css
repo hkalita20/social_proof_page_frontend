@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+body{
+    text-align: center;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.box{
+    height: fit-content;
+    width: 80%;
+    background-color: hsl(300, 24%, 96%);
+    padding: 10px 20px;
+    margin: 10px auto;
+    border-radius: 10px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    height: 51px;
+    transition: transform 1s;
+}
+
+.heading{
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 80px;
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+}
+
+.intro{
+    width: 85%;
+    margin: 20px auto 0;
+    color: hsl(303, 10%, 53%);
+    margin-bottom: 30px;
+    line-height: 1.3rem;
+    font-weight: 500;
+}
+
+.card{
+    background-color: hsl(300, 43%, 22%);
+    color: hsl(300, 24%, 96%);
+    text-align: left;
+    width: 90%;
+    box-sizing: border-box;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+    font-weight: 500;
+    line-height: 1.3rem;
+    transition: transform 1s cubic-bezier(0,-1.66, 1, 2.98);
+}
+
+
+
+
+.card img{
+    border-radius: 50%;
+    height: 35px;
+    transform: translateY(10%);
+    margin-right: 10px;
+}
+
+.name{
+    display: inline-block;
+    font-weight: 700;
+    
+}
+
+.first{
+    margin-top: 45px;
+}
+
+.verify{
+    color:  hsl(333, 80%, 67%);
+}
+
+
+@media only screen and (min-width:760px){
+
+    .card:hover{
+        transform: rotate(10deg);
+        
+    }
+    
+    .box:hover{
+        transform: translatex(10px);
+    }
+    
+    .above{
+        display: flex;
+        gap: 30px;
+    }
+    .left{
+        width: 58%;
+        text-align: left;
+        font-size: 18px;
+    }
+    
+    .right{
+        width: 118%;
+    }
+    .heading{
+        width: auto;
+        margin-left: 20px;
+    }
+    .intro{
+        width: auto;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .box{
+        width: 90%;
+        max-width: 434px;
+        padding: 0 33px;
+        text-align: left;
+        box-sizing: border-box;
+        
+    }
+    .box p{
+        padding-left: 30px;
+        display: inline-block;
+    }
+    .first_box{
+        margin-top: 100px;
+    }
+    
+    .all_card{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .card{
+        max-width: 352.8px;
+        
+    }
+    .first{
+        margin-top:20px;
+    }
+    .second{
+        transform: translateY(15px);
+    }
+    .third{
+        transform: translateY(30px);
+    }
+    
+}
+
+@media only screen and (min-width:900px){
+    body{
+        margin: 10px 10%;
+    }
+    .above{
+        width: 97.7%;
+        margin-bottom: 3rem;
+    }
+    .right{
+        position: relative;
+    }
+    .first_box{
+        position: absolute;
+        transform: translateX(-24%);
+        right: 0;
+        bottom: 167px;
+    }
+    .second_box{ 
+        transform: translateX(-12%);
+    position: absolute;
+    bottom: 107px;
+    right: 0;
+    }
+    .third_box{
+        margin-left: 17rem;
+        position: absolute;
+        right: 0;
+        bottom: 49px;
+        
+    }
+    .left{
+        margin-left: 0.7rem;
+    }
+    .heading{
+        font-size: 46px;
+    }
+}
+
+@media only screen and (min-width:1049px){
+    .heading{
+        font-size: 52px;
+    }
+}
+
+@media only screen and (max-width:1386px){
+    body{
+        margin:10px 3%;
+    }
+}
